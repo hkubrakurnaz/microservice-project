@@ -22,9 +22,9 @@ namespace PlatformService.Data.Mock
             if(!context.Platforms.Any())
             {
                 context.Platforms.AddRange(
-                    new Platform(){Name = "Dot Net", Publisher = "Microsoft", Cost = "Free"},
-                    new Platform(){Name = "Sql Server Express", Publisher = "Microsoft", Cost = "Free"},
-                    new Platform(){Name = "Kubernetes", Publisher = "Cloud Native Computing Foundation", Cost = "Free"}
+                    new Platform(){Id = 1, Name = "Dot Net", Publisher = "Microsoft", Cost = "Free"},
+                    new Platform(){Id = 2, Name = "Sql Server Express", Publisher = "Microsoft", Cost = "Free"},
+                    new Platform(){Id = 3, Name = "Kubernetes", Publisher = "Cloud Native Computing Foundation", Cost = "Free"}
                 );
 
                 context.SaveChanges();
